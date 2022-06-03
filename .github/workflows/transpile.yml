@@ -19,6 +19,7 @@ jobs:
         run: |
           git config --local user.email "mail+github-actions@lenzw.de"
           git config --local user.name "Lenz Weber (Bot)"
+          git add src
           git commit -m "Transpile to JS" -a
       - name: Push changes
         uses: ad-m/github-push-action@master
